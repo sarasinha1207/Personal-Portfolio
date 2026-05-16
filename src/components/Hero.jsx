@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Download } from 'lucide-react';
 import { Link } from 'react-scroll';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 export default function Hero() {
   return (
@@ -30,7 +31,7 @@ export default function Hero() {
               I build modern, interactive, and premium web experiences.
             </p>
             
-            <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 mb-8">
               <Link 
                 to="projects" 
                 smooth={true} 
@@ -46,6 +47,18 @@ export default function Hero() {
               >
                 <Download size={18} />
                 Download CV
+              </a>
+            </div>
+
+            <div className="flex items-center justify-center md:justify-start gap-5">
+              <a href="#" className="text-slate-500 hover:text-blue-600 transition-colors">
+                <FaLinkedin size={24} />
+              </a>
+              <a href="#" className="text-slate-500 hover:text-blue-600 transition-colors">
+                <FaGithub size={24} />
+              </a>
+              <a href="mailto:contact@example.com" className="text-slate-500 hover:text-blue-600 transition-colors">
+                <FaEnvelope size={24} />
               </a>
             </div>
           </motion.div>

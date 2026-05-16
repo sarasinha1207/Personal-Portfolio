@@ -1,4 +1,4 @@
-import { Code, Briefcase, Mail, MessageCircle } from 'lucide-react';
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -11,16 +11,16 @@ export default function Footer() {
         
         <div className="flex gap-4">
           <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors">
-            <Code size={20} />
+            <FaGithub size={20} />
           </a>
           <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors">
-            <Briefcase size={20} />
+            <FaLinkedin size={20} />
           </a>
           <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors">
-            <MessageCircle size={20} />
+            <FaTwitter size={20} />
           </a>
           <a href="mailto:contact@example.com" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors">
-            <Mail size={20} />
+            <FaEnvelope size={20} />
           </a>
         </div>
       </div>

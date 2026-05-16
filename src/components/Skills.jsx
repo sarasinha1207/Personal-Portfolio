@@ -1,63 +1,67 @@
 import { motion } from 'framer-motion';
 import SectionHeading from './SectionHeading';
-import { Monitor, Server, BrainCircuit, PenTool } from 'lucide-react';
+import { Monitor, Database, Palette, Wrench, BrainCircuit, Layers } from 'lucide-react';
 
 export default function Skills() {
   const skillCategories = [
     {
-      title: "Frontend",
+      title: "Frontend Development",
       icon: Monitor,
-      color: "text-blue-600",
-      bg: "bg-blue-50",
-      skills: ["React.js", "Vite", "Tailwind CSS", "JavaScript (ES6+)", "HTML5/CSS3", "Framer Motion"]
+      skills: ["HTML5", "CSS3", "JavaScript", "TypeScript", "React.js", "Next.js", "Tailwind CSS", "Framer Motion", "React Native", "SaaS UI", "Shadcn/ui", "GSAP"]
     },
     {
-      title: "Backend",
-      icon: Server,
-      color: "text-indigo-600",
-      bg: "bg-indigo-50",
-      skills: ["Node.js", "Express", "Python", "MongoDB", "SQL", "RESTful APIs"]
+      title: "Backend Development",
+      icon: Database,
+      skills: ["Node.js", "Python", "REST APIs", "Authentication", "JWT", "PHP"]
     },
     {
-      title: "AI/ML",
+      title: "UI/UX Design",
+      icon: Palette,
+      skills: ["Figma", "Adobe XD", "Wireframing", "Prototyping", "Responsive Design", "Design Systems"]
+    },
+    {
+      title: "DevOps & Tools",
+      icon: Wrench,
+      skills: ["Git", "GitHub", "Vercel", "Netlify", "Testing Library"]
+    },
+    {
+      title: "Generative AI",
       icon: BrainCircuit,
-      color: "text-purple-600",
-      bg: "bg-purple-50",
-      skills: ["TensorFlow", "PyTorch", "Data Analysis", "NLP Basics", "Prompt Engineering"]
+      skills: ["Prompt Engineering", "LangChain", "RAG Pipelines", "OpenAI API", "Gemini", "Pinecone", "FAISS", "LLMs (GPT, LLaMA)", "Vector DBs", "Transformers", "MCP Servers"]
     },
     {
-      title: "Design & Tools",
-      icon: PenTool,
-      color: "text-pink-600",
-      bg: "bg-pink-50",
-      skills: ["Figma", "Adobe XD", "Git & GitHub", "Vercel", "Postman", "VS Code"]
+      title: "Other Technologies",
+      icon: Layers,
+      skills: ["Firebase", "MongoDB", "PostgreSQL", "Supabase"]
     }
   ];
 
   return (
-    <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8">
+    <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
       <div className="max-w-6xl mx-auto">
-        <SectionHeading subtitle="What I Do" title="My Skills" />
+        <SectionHeading subtitle="Technologies I work with" title="Technical Expertise" />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
           {skillCategories.map((category, idx) => (
             <motion.div
               key={idx}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="glass-card p-6 h-full flex flex-col group hover:border-blue-200"
+              className="bg-white border border-slate-200 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow"
             >
-              <div className={`w-14 h-14 rounded-2xl ${category.bg} ${category.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                <category.icon size={28} />
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-12 h-12 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center shrink-0">
+                  <category.icon size={24} />
+                </div>
+                <h3 className="text-xl font-semibold text-slate-800">{category.title}</h3>
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-4">{category.title}</h3>
-              <div className="flex flex-wrap gap-2 mt-auto">
+              <div className="flex flex-wrap gap-2">
                 {category.skills.map((skill, sIdx) => (
                   <span 
                     key={sIdx} 
-                    className="px-3 py-1.5 bg-slate-100 text-slate-600 rounded-lg text-sm font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors cursor-default"
+                    className="px-3 py-1.5 bg-blue-50/70 text-blue-700 rounded-md text-sm font-medium border border-blue-100"
                   >
                     {skill}
                   </span>

@@ -8,6 +8,8 @@ const navLinks = [
   { name: 'Skills', to: 'skills' },
   { name: 'Projects', to: 'projects' },
   { name: 'Experience', to: 'experience' },
+  { name: 'Certifications', to: 'certifications' },
+  { name: 'Achievements', to: 'achievements' },
   { name: 'Contact', to: 'contact' },
 ];
 
@@ -37,7 +39,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-4 xl:gap-6">
           {navLinks.map((link) => (
             <Link
               key={link.name}
@@ -46,7 +48,7 @@ export default function Navbar() {
               duration={500}
               spy={true}
               activeClass="text-blue-600 font-medium"
-              className="text-slate-600 hover:text-blue-600 cursor-pointer text-sm font-medium transition-colors"
+              className="text-slate-600 hover:text-blue-600 cursor-pointer text-xs xl:text-sm font-medium transition-colors"
             >
               {link.name}
             </Link>

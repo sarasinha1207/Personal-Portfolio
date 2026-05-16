@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import SectionHeading from './SectionHeading';
-import { Send, MapPin, Mail, Phone } from 'lucide-react';
+import { Send, MapPin, Mail } from 'lucide-react';
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 export default function Contact() {
   const handleSubmit = (e) => {
@@ -53,6 +54,18 @@ export default function Contact() {
                     New Delhi, India
                   </p>
                 </div>
+              </div>
+
+              <div className="pt-6 border-t border-slate-200 flex gap-4">
+                <a href="#" className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-500 hover:bg-blue-600 hover:text-white transition-colors">
+                  <FaLinkedin size={20} />
+                </a>
+                <a href="#" className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-500 hover:bg-blue-600 hover:text-white transition-colors">
+                  <FaGithub size={20} />
+                </a>
+                <a href="#" className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-500 hover:bg-blue-600 hover:text-white transition-colors">
+                  <FaTwitter size={20} />
+                </a>
               </div>
             </div>
           </motion.div>
