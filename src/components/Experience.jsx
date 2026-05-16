@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import SectionHeading from './SectionHeading';
-import { Briefcase } from 'lucide-react';
+import { Briefcase, ExternalLink } from 'lucide-react';
 
 const experienceData = [
   {
@@ -8,14 +8,16 @@ const experienceData = [
     title: 'Frontend Developer Intern',
     organization: 'Tech Innovations Ltd.',
     date: 'Jun 2024 - Present',
-    description: 'Developing modern React applications, improving performance by 30%, and collaborating with UI/UX designers to implement pixel-perfect interfaces.',
+    description: 'Developing modern React applications, improving performance by 30%, and collaborating with UI/UX designers to implement pixel-perfect interfaces. Participated in daily stand-ups and code reviews to maintain high code quality standards across the entire development team.',
+    link: '#'
   },
   {
     id: 2,
     title: 'Campus Ambassador',
     organization: 'Global Tech Community',
     date: 'Jan 2023 - May 2024',
-    description: 'Organized 5+ coding bootcamps and hackathons for 500+ students. Fostered a strong developer community on campus.',
+    description: 'Organized 5+ coding bootcamps and hackathons for 500+ students. Fostered a strong developer community on campus by conducting weekly technical workshops and bringing in industry experts for guest lectures.',
+    link: '#'
   }
 ];
 
@@ -61,9 +63,14 @@ export default function Experience() {
                       </span>
                       <h3 className="text-xl font-bold text-slate-900">{item.title}</h3>
                       <h4 className="text-md font-semibold text-slate-500 mb-4">{item.organization}</h4>
-                      <p className="text-slate-600 text-sm leading-relaxed">
+                      <p className="text-slate-600 text-sm leading-relaxed mb-4">
                         {item.description}
                       </p>
+                      {item.link && (
+                        <a href={item.link} className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
+                          View Details <ExternalLink size={16} />
+                        </a>
+                      )}
                     </div>
                   </div>
                 </motion.div>

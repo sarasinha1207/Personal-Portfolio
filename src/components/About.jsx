@@ -60,17 +60,28 @@ export default function About() {
                 Education
               </h4>
               <div className="space-y-6">
-                <div className="relative pl-6 border-l-2 border-blue-100">
-                  <div className="absolute w-3 h-3 bg-blue-600 rounded-full -left-[7px] top-1.5 shadow-[0_0_8px_rgba(37,99,235,0.4)]"></div>
-                  <h5 className="font-bold text-lg text-slate-800">B.Tech in Computer Science</h5>
-                  <p className="text-blue-600 font-medium text-sm mb-2">University Name • 2022 - 2026</p>
-                  <p className="text-slate-600">Focusing on Software Engineering, Data Structures, and AI.</p>
+                <div className="flex items-start gap-4">
+                  <div className="w-14 h-14 rounded-full overflow-hidden shrink-0 border border-slate-200 bg-white shadow-sm flex items-center justify-center p-0.5">
+                     {/* Replace src with your university logo */}
+                     <img src="https://ui-avatars.com/api/?name=UN&background=0D8ABC&color=fff&rounded=true" alt="University Logo" className="w-full h-full object-contain" />
+                  </div>
+                  <div>
+                    <h5 className="font-bold text-lg text-slate-800">B.Tech in Computer Science</h5>
+                    <p className="text-blue-600 font-medium text-sm mb-2">University Name • 2022 - 2026</p>
+                    <p className="text-slate-600 text-sm">Focusing on Software Engineering, Data Structures, and AI.</p>
+                  </div>
                 </div>
-                <div className="relative pl-6 border-l-2 border-blue-100">
-                  <div className="absolute w-3 h-3 bg-indigo-400 rounded-full -left-[7px] top-1.5 shadow-[0_0_8px_rgba(99,102,241,0.4)]"></div>
-                  <h5 className="font-bold text-lg text-slate-800">High School</h5>
-                  <p className="text-indigo-500 font-medium text-sm mb-2">School Name • 2020 - 2022</p>
-                  <p className="text-slate-600">Science and Mathematics stream.</p>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-14 h-14 rounded-full overflow-hidden shrink-0 border border-slate-200 bg-white shadow-sm flex items-center justify-center p-0.5">
+                     {/* Replace src with your school logo */}
+                     <img src="https://ui-avatars.com/api/?name=HS&background=4F46E5&color=fff&rounded=true" alt="School Logo" className="w-full h-full object-contain" />
+                  </div>
+                  <div>
+                    <h5 className="font-bold text-lg text-slate-800">High School</h5>
+                    <p className="text-indigo-500 font-medium text-sm mb-2">School Name • 2020 - 2022</p>
+                    <p className="text-slate-600 text-sm">Science and Mathematics stream.</p>
+                  </div>
                 </div>
               </div>
             </div>

@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import SectionHeading from './SectionHeading';
-import { ShieldCheck } from 'lucide-react';
+import { ShieldCheck, ExternalLink } from 'lucide-react';
 
 const certificationsData = [
   {
@@ -9,6 +9,7 @@ const certificationsData = [
     organization: 'Coursera',
     date: 'Dec 2023',
     description: 'Completed comprehensive training on React, Advanced UI, and Capstone projects.',
+    link: '#'
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ const certificationsData = [
     organization: 'Coursera',
     date: 'Aug 2023',
     description: 'Learned data cleaning, analysis, and visualization using SQL and R.',
+    link: '#'
   }
 ];
 
@@ -43,9 +45,14 @@ export default function Certifications() {
               </span>
               <h3 className="text-lg font-bold text-slate-900 mb-2">{item.title}</h3>
               <h4 className="text-sm font-semibold text-slate-500 mb-4">{item.organization}</h4>
-              <p className="text-slate-600 text-sm leading-relaxed mt-auto">
+              <p className="text-slate-600 text-sm leading-relaxed mt-auto mb-6">
                 {item.description}
               </p>
+              {item.link && (
+                <a href={item.link} className="flex items-center justify-center gap-2 px-6 py-2.5 bg-indigo-50 text-indigo-700 font-medium rounded-lg hover:bg-indigo-100 transition-colors w-full">
+                  View Credential <ExternalLink size={16} />
+                </a>
+              )}
             </motion.div>
           ))}
         </div>
