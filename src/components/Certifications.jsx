@@ -9,7 +9,8 @@ const certificationsData = [
     organization: 'Coursera',
     date: 'Dec 2023',
     description: 'Completed comprehensive training on React, Advanced UI, and Capstone projects.',
-    link: '#'
+    link: '#',
+    image: 'https://images.unsplash.com/photo-1523289333742-be1143f6b766?q=80&w=200&auto=format&fit=crop'
   },
   {
     id: 2,
@@ -17,7 +18,8 @@ const certificationsData = [
     organization: 'Coursera',
     date: 'Aug 2023',
     description: 'Learned data cleaning, analysis, and visualization using SQL and R.',
-    link: '#'
+    link: '#',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=200&auto=format&fit=crop'
   }
 ];
 
@@ -37,8 +39,8 @@ export default function Certifications() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="glass-card p-8 flex flex-col items-center text-center group hover:border-blue-200"
             >
-              <div className="w-16 h-16 rounded-full bg-indigo-50 text-indigo-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <ShieldCheck size={32} />
+              <div className="w-full h-32 md:h-40 rounded-xl overflow-hidden mb-6 group-hover:scale-[1.02] transition-transform duration-300 shadow-sm border border-slate-100 bg-white">
+                <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
               </div>
               <span className="inline-block px-3 py-1 bg-indigo-50 text-indigo-600 text-xs font-bold rounded-full mb-3">
                 {item.date}

@@ -15,21 +15,21 @@ export default function About() {
         <SectionHeading subtitle="Discover" title="About Me" />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          
+
           {/* Text & Stats */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-              I am a passionate Computer Science student with a strong foundation in web development, 
-              AI/ML, and UI/UX design. I love bridging the gap between engineering and design—combining 
+              I am a passionate Computer Science student with a strong foundation in web development,
+              AI/ML, and UI/UX design. I love bridging the gap between engineering and design—combining
               my technical knowledge with my keen eye for design to create beautiful, scalable products.
             </p>
             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-              When I'm not coding or designing, I enjoy exploring new technologies, participating in 
+              When I'm not coding or designing, I enjoy exploring new technologies, participating in
               hackathons, and contributing to open-source communities.
             </p>
 
@@ -47,7 +47,7 @@ export default function About() {
           </motion.div>
 
           {/* Education & Interests */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -61,26 +61,41 @@ export default function About() {
               </h4>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-14 h-14 rounded-full overflow-hidden shrink-0 border border-slate-200 bg-white shadow-sm flex items-center justify-center p-0.5">
-                     {/* Replace src with your university logo */}
-                     <img src="https://ui-avatars.com/api/?name=UN&background=0D8ABC&color=fff&rounded=true" alt="University Logo" className="w-full h-full object-contain" />
+                  <div className="w-20 h-20 rounded-full overflow-hidden shrink-0 border border-slate-200 bg-white shadow-sm flex items-center justify-center p-0.5">
+                    {/* Replace src with your university logo */}
+                    <img src="https://ui-avatars.com/api/?name=UN&background=0D8ABC&color=fff&rounded=true" alt="University Logo" className="w-full h-full object-contain" />
                   </div>
                   <div>
                     <h5 className="font-bold text-lg text-slate-800">B.Tech in Computer Science</h5>
-                    <p className="text-blue-600 font-medium text-sm mb-2">University Name • 2022 - 2026</p>
+                    <p className="text-blue-600 font-medium text-sm mb-1">University Name • 2022 - 2026</p>
+                    <p className="text-slate-700 font-semibold text-sm mb-2">CGPA: 8.5 / 10</p>
                     <p className="text-slate-600 text-sm">Focusing on Software Engineering, Data Structures, and AI.</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-14 h-14 rounded-full overflow-hidden shrink-0 border border-slate-200 bg-white shadow-sm flex items-center justify-center p-0.5">
-                     {/* Replace src with your school logo */}
-                     <img src="https://ui-avatars.com/api/?name=HS&background=4F46E5&color=fff&rounded=true" alt="School Logo" className="w-full h-full object-contain" />
+                  <div className="w-20 h-20 rounded-full overflow-hidden shrink-0 border border-slate-200 bg-white shadow-sm flex items-center justify-center p-0.5">
+                    {/* Replace src with your school logo */}
+                    <img src="https://ui-avatars.com/api/?name=XII&background=4F46E5&color=fff&rounded=true" alt="School Logo" className="w-full h-full object-contain" />
                   </div>
                   <div>
-                    <h5 className="font-bold text-lg text-slate-800">High School</h5>
-                    <p className="text-indigo-500 font-medium text-sm mb-2">School Name • 2020 - 2022</p>
+                    <h5 className="font-bold text-lg text-slate-800">Class XII (Senior Secondary)</h5>
+                    <p className="text-indigo-500 font-medium text-sm mb-1">School Name • 2020 - 2022</p>
+                    <p className="text-slate-700 font-semibold text-sm mb-2">Percentage: 92%</p>
                     <p className="text-slate-600 text-sm">Science and Mathematics stream.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-20 h-20 rounded-full overflow-hidden shrink-0 border border-slate-200 bg-white shadow-sm flex items-center justify-center p-0.5">
+                    {/* Replace src with your high school logo */}
+                    <img src="https://ui-avatars.com/api/?name=X&background=0ea5e9&color=fff&rounded=true" alt="High School Logo" className="w-full h-full object-contain" />
+                  </div>
+                  <div>
+                    <h5 className="font-bold text-lg text-slate-800">Class X (High School)</h5>
+                    <p className="text-sky-500 font-medium text-sm mb-1">School Name • 2018 - 2020</p>
+                    <p className="text-slate-700 font-semibold text-sm mb-2">CGPA: 9.8 / 10</p>
+                    <p className="text-slate-600 text-sm">General subjects with honors.</p>
                   </div>
                 </div>
               </div>

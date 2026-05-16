@@ -8,7 +8,6 @@ const navLinks = [
   { name: 'Skills', to: 'skills' },
   { name: 'Projects', to: 'projects' },
   { name: 'Experience', to: 'experience' },
-  { name: 'Certifications', to: 'certifications' },
   { name: 'Achievements', to: 'achievements' },
   { name: 'Contact', to: 'contact' },
 ];
@@ -30,9 +29,8 @@ export default function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-4 sm:px-6 lg:px-8 py-4`}
     >
       <div
-        className={`max-w-5xl mx-auto flex items-center justify-between transition-all duration-300 ${
-          isScrolled ? 'glass-nav px-6 py-3' : 'px-2 py-2'
-        }`}
+        className={`max-w-5xl mx-auto flex items-center justify-between transition-all duration-300 ${isScrolled ? 'glass-nav px-6 py-3' : 'px-2 py-2'
+          }`}
       >
         <div className="text-2xl font-heading font-bold text-gradient cursor-pointer">
           <Link to="home" smooth={true} duration={500}>Portfolio.</Link>
