@@ -39,7 +39,7 @@ export default function Certifications() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="glass-card p-8 flex flex-col items-center text-center group hover:border-blue-200"
             >
-              <div className="w-full h-32 md:h-40 rounded-xl overflow-hidden mb-6 group-hover:scale-[1.02] transition-transform duration-300 shadow-sm border border-slate-100 bg-white">
+              <div className="w-24 h-24 rounded-full overflow-hidden mb-6 group-hover:scale-110 transition-transform duration-300 shadow-sm border-4 border-indigo-50 bg-white">
                 <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
               </div>
               <span className="inline-block px-3 py-1 bg-indigo-50 text-indigo-600 text-xs font-bold rounded-full mb-3">

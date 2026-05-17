@@ -29,30 +29,30 @@ export default function Achievements() {
       <div className="max-w-4xl mx-auto">
         <SectionHeading subtitle="Milestones" title="Achievements" />
 
-        <div className="space-y-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
           {achievementsData.map((item, index) => (
             <motion.div
               key={item.id}
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="glass-card p-8 flex flex-col md:flex-row gap-6 items-start border-l-4 border-l-yellow-400"
+              className="glass-card flex flex-col overflow-hidden border-t-4 border-t-yellow-400 group hover:shadow-lg transition-all"
             >
-              <div className="w-24 h-24 md:w-32 md:h-32 shrink-0 rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-slate-50">
-                <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
+              <div className="w-full h-48 shrink-0 bg-slate-50 relative overflow-hidden">
+                <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
-              <div className="flex-1 flex flex-col items-start">
+              <div className="p-8 flex flex-col flex-1 items-start">
                 <span className="inline-block px-3 py-1 bg-yellow-50 text-yellow-700 text-xs font-bold rounded-full mb-3">
                   {item.date}
                 </span>
                 <h3 className="text-xl font-bold text-slate-900 mb-1">{item.title}</h3>
                 <h4 className="text-md font-semibold text-slate-500 mb-4">{item.organization}</h4>
-                <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                <p className="text-slate-600 text-sm leading-relaxed mb-6 flex-1">
                   {item.description}
                 </p>
                 {item.link && (
-                  <a href={item.link} className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors mt-auto">
+                  <a href={item.link} className="inline-flex items-center gap-2 px-5 py-2.5 bg-yellow-50 text-yellow-700 font-semibold rounded-lg hover:bg-yellow-100 transition-colors w-full justify-center">
                     View Details <ExternalLink size={16} />
                   </a>
                 )}
