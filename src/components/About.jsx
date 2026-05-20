@@ -80,7 +80,7 @@ export default function About() {
                   </div>
                   <div>
                     <h5 className="font-bold text-lg text-slate-800">Class XII (Senior Secondary)</h5>
-                    <p className="text-indigo-500 font-medium text-sm mb-1">Bal bharati Public School, Brij Vihar • 2022 - 2023</p>
+                    <p className="text-indigo-500 font-medium text-sm mb-1">Bal Bharati Public School, Brij Vihar • 2022 - 2023</p>
                     <p className="text-slate-700 font-semibold text-sm mb-2">Percentage: 87.6%</p>
                     <p className="text-slate-600 text-sm">Science and Mathematics stream.</p>
                   </div>
@@ -93,7 +93,7 @@ export default function About() {
                   </div>
                   <div>
                     <h5 className="font-bold text-lg text-slate-800">Class X (High School)</h5>
-                    <p className="text-sky-500 font-medium text-sm mb-1">Bal bharati Public School, Brij Vihar • 2019 - 2020</p>
+                    <p className="text-sky-500 font-medium text-sm mb-1">Bal Bharati Public School, Brij Vihar • 2019 - 2020</p>
                     <p className="text-slate-700 font-semibold text-sm mb-2">Percentage: 93.2%</p>
                   </div>
                 </div>
@@ -103,7 +103,7 @@ export default function About() {
             <div className="glass-card p-8 bg-gradient-to-br from-blue-50 to-indigo-50 border-blue-100/50 hover:border-blue-200 transition-colors">
               <h4 className="text-xl font-bold text-slate-900 mb-4">Core Interests</h4>
               <div className="flex flex-wrap gap-3">
-                {['Artificial Intelligence', 'Machine Learning', 'Full-stack Web Dev', 'UI/UX Design', 'Cloud Computing'].map((interest, idx) => (
+                {['Artificial Intelligence', 'Machine Learning', 'Data Science', 'Full-stack Web Dev', 'UI/UX Design', 'Cloud Computing'].map((interest, idx) => (
                   <span key={idx} className="px-4 py-2 bg-white rounded-full text-sm font-medium text-slate-700 shadow-sm border border-slate-100">
                     {interest}
                   </span>

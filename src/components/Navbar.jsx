@@ -51,13 +51,13 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
-          <a
+          {/* <a
             href="#contact"
             className="bg-slate-900 text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-slate-800 transition-colors shadow-md"
           >
             Hire Me
-          </a>
-        </nav>
+          </a> */}
+        </nav> 
 
         {/* Mobile Nav Toggle */}
         <button

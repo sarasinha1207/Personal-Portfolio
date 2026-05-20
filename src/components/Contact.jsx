@@ -57,13 +57,13 @@ export default function Contact() {
               </div>
 
               <div className="pt-6 border-t border-slate-200 flex gap-4">
-                <a href="#" className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-500 hover:bg-blue-600 hover:text-white transition-colors">
+                <a href="#" className="w-12 h-12 rounded-full bg-blue-700 flex items-center justify-center text-white hover:scale-110 transition-all duration-300">
                   <FaLinkedin size={20} />
                 </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-500 hover:bg-blue-600 hover:text-white transition-colors">
+                <a href="#" className="w-12 h-12 rounded-full bg-blue-700 flex items-center justify-center text-white hover:scale-110 transition-all duration-300">
                   <FaGithub size={20} />
                 </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-500 hover:bg-blue-600 hover:text-white transition-colors">
+                <a href="#" className="w-12 h-12 rounded-full bg-blue-700 flex items-center justify-center text-white hover:scale-110 transition-all duration-300">
                   <FaTwitter size={20} />
                 </a>
               </div>

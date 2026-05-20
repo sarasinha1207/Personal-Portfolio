@@ -20,16 +20,25 @@ const certificationsData = [
     description: 'Learned data cleaning, analysis, and visualization using SQL and R.',
     link: '#',
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=200&auto=format&fit=crop'
+  },
+  {
+    id: 3,
+    title: 'Google Data Analytics Professional Certificate',
+    organization: 'Coursera',
+    date: 'Aug 2023',
+    description: 'Learned data cleaning, analysis, and visualization using SQL and R.',
+    link: '#',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=200&auto=format&fit=crop'
   }
 ];
 
 export default function Certifications() {
   return (
     <section id="certifications" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <SectionHeading subtitle="Verified Skills" title="Certifications" />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 mt-12">
           {certificationsData.map((item, index) => (
             <motion.div
               key={item.id}

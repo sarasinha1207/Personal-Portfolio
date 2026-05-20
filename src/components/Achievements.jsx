@@ -35,10 +35,10 @@ const achievementsData = [
 export default function Achievements() {
   return (
     <section id="achievements" className="py-20 px-4 sm:px-6 lg:px-8 bg-white/50">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <SectionHeading subtitle="Milestones" title="Achievements" />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 mt-12">
           {achievementsData.map((item, index) => (
             <motion.div
               key={item.id}
@@ -48,14 +48,14 @@ export default function Achievements() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="glass-card flex flex-col overflow-hidden border-t-4 border-t-yellow-400 group hover:shadow-lg transition-all"
             >
-              <div className="w-full h-48 shrink-0 bg-slate-50 relative overflow-hidden">
+              <div className="w-full h-36 shrink-0 bg-slate-50 relative overflow-hidden">
                 <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
-              <div className="p-8 flex flex-col flex-1 items-start">
+              <div className="p-5 flex flex-col flex-1 items-start">
                 <span className="inline-block px-3 py-1 bg-yellow-50 text-yellow-700 text-xs font-bold rounded-full mb-3">
                   {item.date}
                 </span>
-                <h3 className="text-xl font-bold text-slate-900 mb-1">{item.title}</h3>
+                <h3 className="text-lg font-bold text-slate-900 mb-1">{item.title}</h3>
                 <h4 className="text-md font-semibold text-slate-500 mb-4">{item.organization}</h4>
                 <p className="text-slate-600 text-sm leading-relaxed mb-6 flex-1">
                   {item.description}
