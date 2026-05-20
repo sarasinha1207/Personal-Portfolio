@@ -17,6 +17,15 @@ const achievementsData = [
     title: 'Top 10 - Global Coding Challenge',
     organization: 'CodeFest',
     date: 'Jul 2023',
+    description: 'Ranked in the top 10 globally in an algorithmic coding competition solving complex data structure problems.Ranked in the top 10 globally in an algorithmic coding competition solving complex data structure problems.',
+    image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=200&auto=format&fit=crop',
+    link: '#'
+  },
+  {
+    id: 3,
+    title: 'Top 10 - Global Coding Challenge',
+    organization: 'CodeFest',
+    date: 'Jul 2023',
     description: 'Ranked in the top 10 globally in an algorithmic coding competition solving complex data structure problems.',
     image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=200&auto=format&fit=crop',
     link: '#'

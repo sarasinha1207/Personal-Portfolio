@@ -63,12 +63,12 @@ export default function About() {
                 <div className="flex items-start gap-4">
                   <div className="w-20 h-20 rounded-full overflow-hidden shrink-0 border border-slate-200 bg-white shadow-sm flex items-center justify-center p-0.5">
                     {/* Replace src with your university logo */}
-                    <img src="https://ui-avatars.com/api/?name=UN&background=0D8ABC&color=fff&rounded=true" alt="University Logo" className="w-full h-full object-contain" />
+                    <img src="/images/IITP_logo.png" alt="University Logo" className="w-full h-full object-contain" />
                   </div>
                   <div>
-                    <h5 className="font-bold text-lg text-slate-800">B.Tech in Computer Science</h5>
-                    <p className="text-blue-600 font-medium text-sm mb-1">University Name • 2022 - 2026</p>
-                    <p className="text-slate-700 font-semibold text-sm mb-2">CGPA: 8.5 / 10</p>
+                    <h5 className="font-bold text-lg text-slate-800">B.Sc (Hons.) in Computer Science</h5>
+                    <p className="text-blue-600 font-medium text-sm mb-1">IIT Patna • 2024 - 2027</p>
+                    <p className="text-slate-700 font-semibold text-sm mb-2">CGPA: 9.57 / 10</p>
                     <p className="text-slate-600 text-sm">Focusing on Software Engineering, Data Structures, and AI.</p>
                   </div>
                 </div>
@@ -76,12 +76,12 @@ export default function About() {
                 <div className="flex items-start gap-4">
                   <div className="w-20 h-20 rounded-full overflow-hidden shrink-0 border border-slate-200 bg-white shadow-sm flex items-center justify-center p-0.5">
                     {/* Replace src with your school logo */}
-                    <img src="https://ui-avatars.com/api/?name=XII&background=4F46E5&color=fff&rounded=true" alt="School Logo" className="w-full h-full object-contain" />
+                    <img src="/images/School_logo.png" alt="School Logo" className="w-full h-full object-contain" />
                   </div>
                   <div>
                     <h5 className="font-bold text-lg text-slate-800">Class XII (Senior Secondary)</h5>
-                    <p className="text-indigo-500 font-medium text-sm mb-1">School Name • 2020 - 2022</p>
-                    <p className="text-slate-700 font-semibold text-sm mb-2">Percentage: 92%</p>
+                    <p className="text-indigo-500 font-medium text-sm mb-1">Bal bharati Public School, Brij Vihar • 2022 - 2023</p>
+                    <p className="text-slate-700 font-semibold text-sm mb-2">Percentage: 87.6%</p>
                     <p className="text-slate-600 text-sm">Science and Mathematics stream.</p>
                   </div>
                 </div>
@@ -89,13 +89,12 @@ export default function About() {
                 <div className="flex items-start gap-4">
                   <div className="w-20 h-20 rounded-full overflow-hidden shrink-0 border border-slate-200 bg-white shadow-sm flex items-center justify-center p-0.5">
                     {/* Replace src with your high school logo */}
-                    <img src="https://ui-avatars.com/api/?name=X&background=0ea5e9&color=fff&rounded=true" alt="High School Logo" className="w-full h-full object-contain" />
+                    <img src="/images/School_logo.png" alt="High School Logo" className="w-full h-full object-contain" />
                   </div>
                   <div>
                     <h5 className="font-bold text-lg text-slate-800">Class X (High School)</h5>
-                    <p className="text-sky-500 font-medium text-sm mb-1">School Name • 2018 - 2020</p>
-                    <p className="text-slate-700 font-semibold text-sm mb-2">CGPA: 9.8 / 10</p>
-                    <p className="text-slate-600 text-sm">General subjects with honors.</p>
+                    <p className="text-sky-500 font-medium text-sm mb-1">Bal bharati Public School, Brij Vihar • 2019 - 2020</p>
+                    <p className="text-slate-700 font-semibold text-sm mb-2">Percentage: 93.2%</p>
                   </div>
                 </div>
               </div>
